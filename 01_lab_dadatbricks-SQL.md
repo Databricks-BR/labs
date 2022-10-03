@@ -8,24 +8,21 @@ O Databricks SQL fornece uma plataforma fácil de usar para analistas que deseja
 
 ## Objetivos do Exercício
 
-
+O objetivo desse laboratório é conhecer as funcionalidades de consulta (_Query_) da plataforma Azure Databricks, utilizando a linguagem SQL (e as interfaces visuais), explorando os potenciais Analíticos, e ao final, construindo um painel gerencial (_Dashboard_). </br>
+</br>
+O caso de uso do exercício utiliza uma base de dados de uma Academia de Ginática, onde vamos simular uma análise exploratória interativa para avaliar o perfil dos frequentadores, os tempos de utilização e as filiais mais frequentadas.
 
 ## Exercício 01 - Criação do database
 
 ``` sql
--- The following creates a database the Databricks Academy learner can use
-CREATE DATABASE IF NOT EXISTS raielo_dbacademy;
--- The following grants SELECT, CREATE, MODIFY, READ_METADATA, and CREATE_NAMED_FUNCTION privileges to the learner for this database
--- **You MUST change the username to the learner’s username**
+
+CREATE DATABASE IF NOT EXISTS <seu_nome>_dbacademy;
+
 
 GRANT ALL PRIVILEGES ON DATABASE dbacademy TO `learner’s_username`;
-USE dbacademy;
 
---The following ensures the table uses the latest data set
-DROP TABLE IF EXISTS intro_to_databricks_sql_gym_logs;
+USE <seu_nome>_dbacademy;
 
--- The following creates a table for use in the current course
--- Data for the table comes from a read-only object store
 
 CREATE TABLE intro_to_databricks_sql_gym_logs
 USING JSON
@@ -49,7 +46,7 @@ SELECT
  gym,
  count(gym)
 FROM
- dbacademy.intro_to_databricks_sql_gym_logs
+ <seu_nome>_dbacademy.intro_to_databricks_sql_gym_logs
 GROUP BY
  gym
 ORDER BY
@@ -58,23 +55,23 @@ ORDER BY
 ## Exercício 04 - Avaliando a faixa (range) de Datas 
 
 ``` sql
--- Tab: Which Dates
+
 SELECT
  from_unixtime(min(first_timestamp), “d MMMM y”) First_Date,
  from_unixtime(max(last_timestamp), “d MMMM y”) Last_Date
 FROM
- dbacademy.intro_to_databricks_sql_gym_logs;
+ <seu_nome>_dbacademy.intro_to_databricks_sql_gym_logs;
 ``` 
 
 ## Exercício 05 - Calculando a média de tempo na academia
 
 ``` sql
--- Tab: Avg Time Spent
+
 SELECT
  from_unixtime(first_timestamp, “dd”) as day,
  avg((last_timestamp - first_timestamp) / 60) as avg_time
 FROM
- dbacademy.intro_to_databricks_sql_gym_logs
+ <seu_nome>_dbacademy.intro_to_databricks_sql_gym_logs
 group by
  day
 ORDER BY
