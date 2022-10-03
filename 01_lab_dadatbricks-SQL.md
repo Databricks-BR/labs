@@ -19,7 +19,7 @@ O caso de uso do exercício utiliza uma base de dados de uma Academia de Gináti
 CREATE DATABASE IF NOT EXISTS <seu_nome>_dbacademy;
 
 
-GRANT ALL PRIVILEGES ON DATABASE dbacademy TO `learner’s_username`;
+GRANT ALL PRIVILEGES ON DATABASE <seu_nome>_dbacademy TO `learner’s_username`;
 
 USE <seu_nome>_dbacademy;
 
@@ -36,7 +36,7 @@ LOCATION ‘wasbs://courseware@dbacademy.blob.core.windows.net/introduction-to-d
 SELECT
  *
 FROM
- dbacademy.intro_to_databricks_sql_gym_logs;
+ <seu_nome>_dbacademy.intro_to_databricks_sql_gym_logs;
 ``` 
 
  ## Exercício 03 - Verificando as Academias mais Populares
