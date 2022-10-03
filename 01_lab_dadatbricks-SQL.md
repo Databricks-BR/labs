@@ -1,5 +1,10 @@
 ## Conceito
 
+O Azure Databricks é uma plataforma de análise de dados otimizada para a plataforma de Serviços de Nuvem do Microsoft Azure. O Azure Databricks oferece três ambientes para o desenvolvimento de aplicativos com uso intensivo de dados: Databricks SQL, Engenharia de Ciência de Dados do Databricks e Databricks Machine Learning. </br>
+
+O Databricks SQL fornece uma plataforma fácil de usar para analistas que desejam executar consultas SQL em data lake, criar vários tipos de visualização para explorar os resultados da consulta de diferentes perspectivas, além de criar e compartilhar painéis. </br>
+
+<img src="https://raw.githubusercontent.com/Databricks-BR/labs/main/images/databricks_sql.png" width="700px">
 
 ## Objetivos do Exercício
 
@@ -28,7 +33,7 @@ LOCATION ‘wasbs://courseware@dbacademy.blob.core.windows.net/introduction-to-d
 
 ```
 
-## Exercício 01 - SQL de visualização
+## Exercício 02 - SQL de visualização simples
 
 ``` sql
 SELECT
@@ -37,7 +42,7 @@ FROM
  dbacademy.intro_to_databricks_sql_gym_logs;
 ``` 
 
- ## Exercício 02 - Verificando as Academias mais Populares
+ ## Exercício 03 - Verificando as Academias mais Populares
  
 ``` sql
 SELECT
@@ -50,7 +55,7 @@ GROUP BY
 ORDER BY
  gym;
 ``` 
-## Exercício 03 - Avaliando a faixa (range) de Datas 
+## Exercício 04 - Avaliando a faixa (range) de Datas 
 
 ``` sql
 -- Tab: Which Dates
@@ -61,7 +66,7 @@ FROM
  dbacademy.intro_to_databricks_sql_gym_logs;
 ``` 
 
-## Exercício 04 - Calculando a média de tempo na academia
+## Exercício 05 - Calculando a média de tempo na academia
 
 ``` sql
 -- Tab: Avg Time Spent
