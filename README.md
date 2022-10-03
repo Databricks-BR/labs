@@ -1,6 +1,8 @@
+<img src="https://raw.githubusercontent.com/Databricks-BR/labs/main/images/azure_lab.png">
+
 # Azure Databricks Lakehouse Labs 
 
-Evento Azure Databricks Lakehouse LABS em 5 de Outubro de 2022.
+Evento presencial Azure Databricks Lakehouse LABS em 5 de Outubro de 2022.
 
 ## Data e Local
 
