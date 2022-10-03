@@ -1,6 +1,6 @@
 ## Conceito
 
-O Azure Databricks é uma plataforma de análise de dados otimizada para a plataforma de Serviços de Nuvem do Microsoft Azure. O Azure Databricks oferece três ambientes para o desenvolvimento de aplicativos com uso intensivo de dados: Databricks SQL, Engenharia de Ciência de Dados do Databricks e Databricks Machine Learning. </br>
+O Azure Databricks é uma plataforma de análise de dados otimizada para a plataforma de Serviços de Nuvem do Microsoft Azure. O Azure Databricks oferece três ambientes para o desenvolvimento de aplicativos com uso intensivo de dados: **Databricks SQL**, Engenharia de Ciência de Dados do Databricks e Machine Learning. </br>
 
 O Databricks SQL fornece uma plataforma fácil de usar para analistas que desejam executar consultas SQL em data lake, criar vários tipos de visualização para explorar os resultados da consulta de diferentes perspectivas, além de criar e compartilhar painéis. </br>
 
@@ -10,7 +10,7 @@ O Databricks SQL fornece uma plataforma fácil de usar para analistas que deseja
 
 O objetivo desse laboratório é conhecer as funcionalidades de consulta (_Query_) da plataforma Azure Databricks, utilizando a linguagem SQL (e as interfaces visuais), explorando os potenciais Analíticos, e ao final, construindo um painel gerencial (_Dashboard_). </br>
 </br>
-O caso de uso do exercício utiliza uma base de dados de uma Academia de Ginática, onde vamos simular uma análise exploratória interativa para avaliar o perfil dos frequentadores, os tempos de utilização e as filiais mais frequentadas.
+O caso de uso do exercício utiliza uma base de dados de uma **Academia de Ginática**, onde vamos simular uma análise exploratória interativa para avaliar o perfil dos frequentadores, os tempos de utilização e as filiais mais frequentadas.
 
 ## Exercício 01 - Criação do database
 
